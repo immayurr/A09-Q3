@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | College Events</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            color: #1f2937;
+        }
+        header {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 28px 16px;
+        }
+        header h1 { margin: 0 0 10px; }
+        nav {
+            background: #1d4ed8;
+            text-align: center;
+            padding: 13px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 32px 16px;
+            background: #dbeafe;
+        }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 22px;
+        }
+        .events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px #00000012;
+            border-top: 4px solid #2563eb;
+        }
+        .card h3 { color: #1d4ed8; }
+        .button {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+        section { margin-bottom: 28px; }
+        footer {
+            background: #172554;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+        @media (max-width: 500px) {
+            nav a { display: inline-block; margin: 6px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CampusConnect</h1>
+        <p>College Event Management Portal</p>
+        <p>Discover. Participate. Achieve.</p>
+    </header>
+
+    <nav>
+        <a href="#events">Upcoming Events</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Registration</a>
+        <a href="#status">Registration Status</a>
+    </nav>
+
+    <div class="hero">
+        <h2>What's Happening on Campus?</h2>
+        <p>Explore technical symposiums, hackathons, workshops and cultural festivals.</p>
+    </div>
+
+    <main class="container">
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events">
+                <article class="card">
+                    <h3>TechNova Symposium</h3>
+                    <p><b>Date:</b> 25 November 2026</p>
+                    <p><b>Time:</b> 9:00 AM - 4:00 PM</p>
+                    <p><b>Venue:</b> Main Auditorium</p>
+                    <p><b>Seats:</b> 100 participants</p>
+                    <a class="button" href="#register">Registration Details</a>
+                </article>
+
+                <article class="card">
+                    <h3>CodeSprint Hackathon</h3>
+                    <p><b>Date:</b> 28 November 2026</p>
+                    <p><b>Time:</b> 10:00 AM - 6:00 PM</p>
+                    <p><b>Venue:</b> Computer Lab Block</p>
+                    <p><b>Seats:</b> 60 participants</p>
+                    <a class="button" href="#register">Registration Details</a>
+                </article>
+
+                <article class="card">
+                    <h3>AI & Cloud Workshop</h3>
+                    <p><b>Date:</b> 2 December 2026</p>
+                    <p><b>Time:</b> 11:00 AM - 1:00 PM</p>
+                    <p><b>Venue:</b> Seminar Hall</p>
+                    <p><b>Seats:</b> 50 participants</p>
+                    <a class="button" href="#register">Registration Details</a>
+                </article>
+
+                <article class="card">
+                    <h3>Cultural Fiesta</h3>
+                    <p><b>Date:</b> 5 December 2026</p>
+                    <p><b>Time:</b> 4:00 PM - 8:00 PM</p>
+                    <p><b>Venue:</b> Open-Air Theatre</p>
+                    <p><b>Seats:</b> 200 participants</p>
+                    <a class="button" href="#register">Registration Details</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+            <div class="card">
+                <p>9:00 AM - 10:00 AM: Opening ceremony</p>
+                <p>10:00 AM - 12:00 PM: Technical sessions and competitions</p>
+                <p>12:00 PM - 1:00 PM: Lunch break</p>
+                <p>1:00 PM - 3:00 PM: Workshops and project demonstrations</p>
+                <p>3:00 PM - 4:00 PM: Results and prize distribution</p>
+            </div>
+        </section>
+
+        <section id="register">
+            <h2>Registration Instructions</h2>
+            <div class="card">
+                <ol>
+                    <li>Contact the event coordinator or use your college registration form.</li>
+                    <li>Provide your name, department and student ID.</li>
+                    <li>Choose the event and submit your registration.</li>
+                    <li>Save your registration confirmation for entry.</li>
+                </ol>
+                <p><b>Note:</b> Registration is subject to seat availability.</p>
+            </div>
+        </section>
+
+        <section id="status">
+            <h2>Registration Status</h2>
+            <div class="card">
+                <p>Contact the event coordinator with your registration ID to check your status.</p>
+                <p>Participant lists and seat availability are managed by faculty coordinators.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Faculty Coordinator Information</h2>
+            <div class="card">
+                <p>Faculty coordinators can publish events, set participant limits and monitor registrations.</p>
+                <p>This demonstration provides a static front end; a backend is needed for live registration, authentication and database updates.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>CampusConnect | College Event Management Portal</p>
+        <p>Learn, Compete and Celebrate Together.</p>
+    </footer>
+</body>
+</html>
